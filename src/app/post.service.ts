@@ -11,4 +11,11 @@ export class PostService {
     return POSTS;
   }
 
+  getPostById(postId: number) {
+    for (let post of POSTS) {
+      if (post.id === postId) {
+        return post;
+      }
+    }
+  }
 }
