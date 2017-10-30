@@ -1,3 +1,8 @@
-<h1>
-  <h2>This post has a title of {{post.title}}</h2>
-</h1>
+<div class="card card-body">
+  <h2>Title: {{(post | async).title}}</h2>
+  <h2>Sub: {{(post | async).subReddit}}</h2>
+  <h3>Author: {{(post | async).author}}</h3>
+  <h4><a href="{{(post | async).url}}">Link</a></h4>
+  <p>{{(post | async).body}}</p>
+  <p>{{(post | async).vote}}</p>
+</div>

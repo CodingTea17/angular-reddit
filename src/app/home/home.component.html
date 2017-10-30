@@ -3,10 +3,11 @@
     <h3>This is hackerReddit.</h3>
     <a href="post-create"><h4>Create Post</h4></a>
     <div class="list-group">
-      <div *ngFor="let post of posts"  class="list-group-item list-group-item-action">
+      <div *ngFor="let post of posts | async"  class="list-group-item list-group-item-action">
         <a href="{{post.url}}"><h3>{{post.title}}</h3></a> <h4>{{post.subReddit}}</h4> | {{post.vote}}
         <p>{{post.body}}</p>
-        <a href="posts/{{post.id}}">discuss</a>
+        <p>{{post.$key}} VS {{post.id}}</p>
+        <a href="posts/{{post.$key}}">discuss</a>
       </div>
     </div>
   </div>
