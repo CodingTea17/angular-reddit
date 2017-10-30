@@ -1,0 +1,18 @@
+<div class="card">
+  <div class="card-body">
+    <h1>New Post</h1>
+    <label>Post Title:</label>
+    <input #newTitle><br>
+    <label>Enter Author:</label>
+    <input #newAuthor><br>
+    <label>Enter Subreddit:</label>
+    <input #newSubreddit><br>
+    <label>Post URL:</label>
+    <input #newUrl><br>
+    <label>Post Body:</label>
+    <input #newBody><br>
+    <label>Post ID:</label>
+    <input #newId><br>
+    <button type="submit" class="btn btn-info" (click)="new(newTitle.value, newAuthor.value, newSubreddit.value, newUrl.value, newBody.value, newId.value)">Create</button>
+  </div>
+</div>

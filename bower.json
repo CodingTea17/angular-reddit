@@ -1,0 +1,20 @@
+{
+  "name": "hackr-reddit",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Dawson / Keegan"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-beta"
+  }
+}
